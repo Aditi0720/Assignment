@@ -1,0 +1,244 @@
+                                                                 Assignment 1
+                                                                 
+Class 1 
+print("good evening all")
+
+# creating a variable
+a="Hello Everyone" # -> string
+print(a)
+print(type(a))
+
+
+num1=3387  #Integer
+num2=3.476  #float
+sum =num1 + num2
+print(type(num2))
+print(type(num1))
+print(sum)
+
+num1=234
+num2=123
+sum = num1 - num2
+print(sum)
+
+
+num1=2.9
+num2=2.3
+sum = num1/num2
+print(sum)
+
+Class2
+
+#Boolean
+print(10<9)
+add=False
+print(add)
+print(type(add))
+
+name="Jerry"
+no=3
+#concatenating -> adding up two strings
+print("Hello " + name , no)
+
+# collection datatypes in Python
+# list , tuple , set , dictionary
+# list-> ordered collection of datatypes,[],mutable(changeable)
+
+mylist=["Data","Details","Access"]
+mylist1=[366,476.0,True,"Data"]
+print(mylist1,mylist)
+
+# Update
+mylist1[2]=False
+print(mylist1)
+
+# Append
+mylist1.append("data1")
+print(mylist1)
+
+# Insert
+mylist1.insert(0,300)
+print(mylist1)
+
+# delete
+del mylist1[5]
+print(mylist1)
+
+mylist1.remove("Data")
+print(mylist1)
+
+
+# Indexing
+mylist1=[366,476.0,True,"Data"]
+print(mylist1[3])
+
+Class3
+
+#Tuple -> ordered collection of datatypes , () , immutable
+
+tuple=("dell","Asusu","Hp", 27, 387.87)
+print(tuple)
+del tuple
+print(tuple)
+
+#Dictionary : it consists of key and the values
+
+Dict={
+    "User Name":"Admin",
+      "Password":"Pass"
+      "Os":"windows"
+      "Ram":"128GB"
+}
+print(Dict)
+
+a="randomness"
+print(a[0:100])
+print(a[3:])
+print([:3])
+print(a[-9:-1])
+
+Class 4
+
+#Set -> unordered collection of datatypes ,{},
+myset={"A","B","C",32465,"A"}
+print(myset)
+print(len(myset))
+
+myset.add(True)
+print(myset)
+
+#frozenset
+
+myfrozenset= frozenset(["E","F"])
+print(myfrozenset)
+
+var=set()
+print(var)
+
+var.add("Add")
+print(var)
+
+set1={"Data","task","Status"}
+set2={0,True,"Data"}
+set3=set1|(set2)
+print(set3)
+
+set1={"Data","task","Status"}
+set2={0,True,"Data"}
+set3=set1&(set2)
+print(set3)
+
+set1.clear()
+print(set1)
+
+set1=100
+set2=200
+print(set1!=set2)
+print(set1>=set2)
+print(set1==set2)
+
+set1=100
+set2="100"
+print(set1!=set2)
+#print(set1>=set2)
+print(set1==set2)
+
+set1=100
+set2=100
+print(set1!=set2)
+print((set1)>=(set2))
+print(set1==set2)
+
+Class5
+
+
+# Function -> a set of code will  be execuated whenever  it is called
+print("hello")
+
+def func():
+  
+
+ list1= ["Data","Status","Progress",1,1,2,3]
+print(list1[0])
+print(list1[1])
+print(list1[2])
+print(list1[3])
+
+for value in list1:
+  print(value)
+
+def sub(num1,num2):
+  print("The addition of two values are",(num1-num2))
+sub(45,55)
+
+def a(name,name1):
+  print("Hey",name,"and",name1,"good to see you today")
+a("Tom","Jerry")
+
+def user():
+  x=input("Enter the name:")
+  print("Nice to meet you",x)
+user()
+
+def addition():
+  num1 = int(input("Enter first num: "))
+  num2 = int(input("Enter second num: "))
+  print("The sum of given two number is:",(num1 + num2))
+addition()
+
+#Advance argument passing
+# Positional arguments
+def arg(name,batch,year):
+   print("Hey this is",name,"from",batch,"in the year",year)
+arg("Tom","Sept batch",2022)
+
+ def value(a,b,c,d):
+  print(value)
+  value(4,2,1,3)
+
+Class6
+
+# Keyword arguments
+
+
+def key(name, marks, subject):
+  print("Hi my name is",name,"and i scored",marks,"in",subject)
+key("Tom","100 marks","Maths")
+
+# default arguments
+def awesome(name="Tom",city="Bangalore",describe="beautiful"):
+  print("Hey I am",name,"from",describe,city)
+awesome("Tom")
+
+def func(Teacher,*args):
+  print("The Teacher name is",Teacher)
+  for rollno in args:
+    print("The students are",rollno)
+func("Tom",1,2,5,10,30,40,45)
+
+def func(Teacher,*a,**kwargs):
+  print("The teacher name is",Teacher,a)
+  for rollno in a:
+    print("The students are",rollno)
+  for subject in kwargs:
+    print(subject,kwargs[subject])
+func("Tom",1,2,5,10,30,40,45,science=10,english=4)
+
+#Sequence
+
+list=["A","B","C","D"]
+print("A" not in list)
+print("data" not in list)
+print(len(list))
+
+seq="Hello"
+print(seq.index("H"))
+
+seq="Hello"
+print(seq.index("l",3))
+
+a="engineering"
+print(a.index("e",6))
+
+b=[1,2,3,4,8,6,8,9,8,20,376]
+print(b.index(8,8,20))
